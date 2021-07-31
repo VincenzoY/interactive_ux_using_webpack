@@ -5,20 +5,48 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div class="dropdown-container">
-      <div>Options</div>
-      <div>Option 1</div>
-      <div>Option 2</div>
-      <div>Option 3</div>
-      <div>Option 4</div>
+    <div>
+      <div class="dropdown-container">
+        <div>Options</div>
+        <div class="dropdown-item">
+          <div>Option 1</div>
+          <div>Option 2</div>
+          <div>Option 3</div>
+          <div>Option 4</div>
+        </div>
+      </div>
+      <div class="dropdown-container">
+        <div>Secondary</div>
+        <div class="dropdown-item">
+          <div>S_Option 1</div>
+          <div>S_Option 2</div>
+          <div>S_Option 3</div>
+          <div>S_Option 4</div>
+        </div>
+      </div>
     </div>
-    <div class="dropdown-container">
-      <div>Secondary</div>
-      <div>S_Option 1</div>
-      <div>S_Option 2</div>
-      <div>S_Option 3</div>
-      <div>S_Option 4</div>
+    
+    <div id='carousel-container'>
+      <div id='selector'>
+        <div class="arrow left"><</div>
+        <div class="arrow right">></div>
+        <div id="carousel">
+          <div class="placeholder-img black"></div>
+          <div class="placeholder-img red"></div>
+          <div class="placeholder-img orange"></div>
+          <div class="placeholder-img blue"></div>
+          <div class="placeholder-img green"></div>
+        </div>
+      </div>
+      <div id="carousel-indicator">
+        <div class="dot selected"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
     </div>
+    
     <script src="main.js"></script>
   </body>
 </html>

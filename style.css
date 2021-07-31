@@ -1,10 +1,13 @@
 .dropdown-container {
-    width: 100px;
+    width: 150px;
     height: auto;
-
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
 }
 
 .dropdown-container div {
+    box-sizing: border-box;
     background-color: lightgreen;
     padding: 0.5em;
 }
@@ -18,6 +21,103 @@
     cursor: default;
 }
 
+.dropdown-item {
+    position: absolute;
+    width: 150px;
+    z-index: 1;
+}
+
+#carousel-container {
+    margin: 20px 40px;
+}
+
+#carousel {
+    height: 300px;
+    width: 10000px;
+    position: relative;
+    left:0;
+    transition: 800ms;
+}
+
+#selector {
+    height: 300px;
+    width: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.left {
+    left: 20px;
+}
+
+.right {
+    right: 20px;
+}
+
+.placeholder-img {
+    display: inline;
+    height: 300px;
+    width: 600px;
+    float: left;
+    clear: none;
+}
+
+.black {
+    background-color: black;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+#carousel-indicator {
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 10px;
+}
+
+.selected {
+    background-color: black;
+}
 
 
 
